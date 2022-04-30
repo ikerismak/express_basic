@@ -25,3 +25,11 @@ app.get('/home',(req,res) => {
     res.send('bienvenido a esta pagina perros')
 })
 
+// Regresando un objeto
+// localhost:3000/explorersInNode
+
+app.get("/explorersInNode",(req, res) => {
+
+    const explorer = {name: "explorer", msg: "hello"}
+    res.send(explorer)
+})
